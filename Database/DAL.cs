@@ -11,7 +11,7 @@ namespace library_System.Database
         {
             using (LibrarySystemEntities db = new LibrarySystemEntities())
             {
-                // To list the user Selecting the first Letter of the DB 
+                // To list the Users using LINQ Queries  
                 var query = (from u in db.Users select u).ToList();
                 return query;
             }
@@ -21,7 +21,7 @@ namespace library_System.Database
         {
             using (LibrarySystemEntities db = new LibrarySystemEntities())
             {
-                // To list the Book Selecting the first Letter of the DB 
+                // To list the Book using LINQ Queries  
                 var query = (from b in db.Books select b).ToList();
                 return query;
             }
